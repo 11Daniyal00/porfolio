@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+<style>
+  /* Portfolio Section */
+.portfolio {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  text-align: center;
+}
+
+/* Filters */
+.portfolio-filters {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.portfolio-filters li {
+  display: inline-block;
+  padding: 10px 22px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters .filter-active {
+  background: #6c63ff;
+  color: #fff;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.portfolio-item img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+/* Hover Zoom */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Info Overlay */
+.portfolio-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
+/* Text */
+.portfolio-info h4 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Link Icon */
+.details-link {
+  margin-top: 10px;
+  font-size: 26px;
+  color: #6c63ff;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.details-link:hover {
+  background: #6c63ff;
+  color: #fff;
+}
+
+</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img src="vvv.jpg" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Muhammad Daniyal</h2>
+            <p>I'm <span class="typed" data-typed-items="Designer, Developer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+   <section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Motivated and detail-oriented IT professional with a 3-year diploma from Aptech (ongoing) and hands-on experience in software, database management, and basic network support. Seeking a junior-level position in the IT department of a reputable organization where I can support system operations, assist users, and grow my technical skills.
+    </p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img src="imggg.jpeg" class="img-fluid" alt="Profile Image">
+      </div>
+      <div class="col-lg-8 content">
+        <h2>Junior UI/UX Designer & Web Developer</h2>
+        <p class="fst-italic py-3">
+          Fresh IT professional with academic and practical experience in ASP.NET MVC, database management, Flutter, PHP, and UI/UX design using Figma and Canva. Quick learner eager to contribute to system operations and software development projects.
+        </p>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 April 2007</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+923090248772</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Karachi, Pakistan</span></li>            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>daniyalmuhammad320@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="py-3">
+          Worked on academic and practical IT projects, managed SQL Server databases, assisted users with software and hardware issues, and developed web applications using ASP.NET MVC. Committed to continuous learning and improving technical skills.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+
+
+   <section id="skills" class="skills section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Technical skills acquired through education and hands-on experience</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>Windows OS / MS Office</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>C# / ASP.Net MVC (Junior Level)</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>Dart / Flutter</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>Database Management</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>Figma / Canva for UI/UX</span> <i class="val">70%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>Data Entry & System Support</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+   <!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Motivated and detail-oriented IT professional seeking a junior-level position to apply and grow technical skills.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Muhammad Daniyal</h4>
+          <p>
+            <em>
+              Motivated IT professional with hands-on experience in ASP.NET MVC,
+              database management, and IT support. Strong problem-solving skills
+              with a passion for continuous learning.
+            </em>
+          </p>
+          <ul>
+            <li>Karachi, Pakistan</li>
+            <li>+92 309 0248772</li>
+            <li>daniyalmuhammad320@gmail.com</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+
+        <div class="resume-item">
+          <h4>3-Year Diploma in Software / IT</h4>
+          <h5>2024 – Ongoing</h5>
+          <p><em>Aptech Learning Institute</em></p>
+          <p>Focused on software development, databases, and IT fundamentals.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Intermediate in Science</h4>
+          <h5>2023 – 2025</h5>
+          <p><em>Sindh Board</em></p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+        <h3 class="resume-title">Work Experience</h3>
+
+        <div class="resume-item">
+          <h4>Junior IT / Software Developer (Fresh)</h4>
+          <h5>Academic & Practical Experience</h5>
+          <ul>
+            <li>Developed web applications using ASP.NET MVC</li>
+            <li>Worked with SQL Server databases (tables & basic queries)</li>
+            <li>Provided IT support, system setup, and troubleshooting</li>
+            <li>Assisted users with software, hardware, and network issues</li>
+            <li>Maintained system documentation and data records</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Skills</h3>
+        <div class="resume-item">
+          <ul>
+            <li>ASP.NET / ASP.NET MVC (Junior Level)</li>
+            <li>C# Programming</li>
+            <li>Database Management (SQL Server)</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Flutter & PHP (Basic)</li>
+            <li>Figma & Canva (UI/UX)</li>
+            <li>Windows OS & MS Office</li>
+            <li>Data Entry & System Support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- End Resume Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="tm.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Titanium Gym</h4>
+                <p>Website Design</p>
+                <a href="https://effortless-chimera-e14587.netlify.app/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="coffee.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Coffee Blend</h4>
+                <p>Website Design</p>
+                <a href="https://lucky-dasik-91a821.netlify.app/shop" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="bw.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>BW Design</h4>
+                <p>Website Design</p>
+                <a href="https://courageous-nougat-e1281c.netlify.app/light" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="sm.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Smart travel</h4>
+                <p>Website Design</p>
+                <a href="https://curious-duckanoo-b29146.netlify.app/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="wh.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>(wH)The Wearhouse</h4>
+                <p>Website Design</p>
+                <a href="https://cerulean-seahorse-a1c1ce.netlify.app/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="adp.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>AdminOne Panel</h4>
+                <p>Admin Panel</p>
+                <a href="https://cool-starship-9a066c.netlify.app/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="adp2.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Waali Admin Panel</h4>
+                <p>Admin Panel</p>
+                <a href="https://comforting-donut-eedafd.netlify.app/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <div class="container section-title">
+    <h2>Contact</h2>
+    <p>You can contact me anytime for work, projects, or collaboration.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Info -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Karachi, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex">
+          <i class="bi bi-telephone"></i>
+          <div>
+            <h3>Call Me</h3>
+            <p>+92 309 0248772</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex">
+          <i class="bi bi-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>daniyalmuhammad320@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Form -->
+      <div class="col-lg-8">
+
+        <form name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              class="php-email-form">
+
+          <!-- Netlify required -->
+          <input type="hidden" name="form-name" value="contact">
+
+          <!-- Anti spam -->
+          <p hidden>
+            <label>Don’t fill: <input name="bot-field"></label>
+          </p>
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control"
+                     placeholder="Your Name" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control"
+                     placeholder="Your Email" required>
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control"
+                     placeholder="Subject" required>
+            </div>
+
+            <div class="col-md-12">
+              <textarea name="message" rows="6"
+                        class="form-control"
+                        placeholder="Message" required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+
+              <button type="submit">Send Message</button>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Muhammad Daniyal</h3>
+      <p>Focused on software development, databases, and IT fundamentals.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="typed.umd.js"></script>
+  <script src="purecounter_vanilla.js"></script>
+  <script src="noframework.waypoints.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
